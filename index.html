@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W2</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet"> 
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    
+
+</head>
+<body>
+    <div id="header" class="min-h-[165px] w-full bg-[#000]">
+        <div class="content-grid relative">
+            <div>
+                <h1 class="text-[#ffde59] text-[50px] text-center pt-[20px]"><a href="">LOGO</a></h1>
+                <img src="" alt="">
+                <h2 class="text-[#fff] text-[18px] font-medium text-center">Số chuẩn vạn người mê</h2>
+            </div>
+            <ul class="text-[#fff] flex justify-center p-[8px] max-lg:hidden">
+                <li>
+                    <a href="">Trang chủ</a>
+                </li>
+                <li>
+                    <a href="">Về chúng tôi</a>
+                </li>
+                <li> 
+                    <a href="">Cầu đẹp Miền Bắc</a>
+                    <i class="fa fa-caret-down"></i>
+                    <div class="header_dropdown">
+                        <div><a href="#">Cầu 1</div>
+                        <div><a href="#">Cầu 2</a></div>
+                        <div><a href="#">Cầu 3</a></div>
+                    </div>
+                </li>
+                <li>
+                    <a href="">Cầu chuẩn miền Nam</a>
+                </li>
+                <li>
+                    <a href="">Cầu vip Miền Trung</a>
+                </li>
+            </ul>
+            <div id="line-header1" class="absolute border-t-[1px] w-[200px] top-[60px] left-0 max-md:hidden"></div>
+            <div id="line-header2" class="absolute border-t-[1px] w-[200px] top-[60px] right-0 max-md:hidden"></div>
+        </div>
+        <!-- --- -->
+        <div class="lg:hidden menu_icon_box z-20 bg-[#000] top-[108px] right-0 pr-[16px] absolute rounded-[4px] cursor-pointer">
+            <div class="line1 w-[30px] h-[4px] my-[11px] mx-[4px] bg-[#fff] rounded-[50px] transition-all"></div>
+            <div class="line2 w-[30px] h-[4px] my-[11px] mx-[4px] bg-[#fff] rounded-[50px] transition-all"></div>
+            <div class="line3 w-[30px] h-[4px] my-[11px] mx-[4px] bg-[#fff] rounded-[50px] transition-all"></div>
+        </div>
+        <div class="box bg-[#000] absolute text-left z-10 min-h-[100vh]">
+            <h1 class="text-[#ffde59] text-[50px] text-center pt-[40px]"><a href="">LOGO</a></h1>
+                <img src="" alt="">
+            <ul class="mx-[30px] mt-[80px]">
+                <li class="mb-[30px] transition-all hover:bg-[#c6c6c6] hover:rounded-[8px]"><a class="text-white text-[28px] px-[8px] my-[6px] block" href="#">Trang chủ</a></li>
+                <li class="mb-[30px] transition-all hover:bg-[#c6c6c6] hover:rounded-[8px]"><a class="text-white text-[28px] px-[8px] py-[6px] block" href="#">Về chúng tôi</a></li>
+                <li class="mb-[30px] transition-all hover:bg-[#c6c6c6] hover:rounded-[8px]"><a class="text-white text-[28px] px-[8px] py-[6px] block" href="#">Cầu đẹp Miền Bắc</a></li>
+                <li class="mb-[30px] transition-all hover:bg-[#c6c6c6] hover:rounded-[8px]"><a class="text-white text-[28px] px-[8px] py-[6px] block" href="#">Cầu chuẩn miền Nam</a></li>
+                <li class="mb-[30px] transition-all hover:bg-[#c6c6c6] hover:rounded-[8px]"><a class="text-white text-[28px] px-[8px] py-[6px] block" href="#">Cầu vip Miền Trung</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="body" class="h-full">
+        <div id="section1" class="bg-[#ffde59] pb-[20px]">
+            <div class="content-grid grid gap-2 xl:grid-cols-3 xl:gap-3 md:grid-cols-2 grid-cols-1">
+                <div class="w-full max-sm:mt-[40px]">
+                    <div class="w-[59px] h-[59px] mx-auto my-[20px] max-sm:my-[10px]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 24 24" class="" fill="rgba(234, 3, 45, 1)"> <path d="M12,2C15.31,2 18,4.66 18,7.95C18,12.41 12,19 12,19C12,19 6,12.41 6,7.95C6,4.66 8.69,2 12,2M12,6A2,2 0 0,0 10,8A2,2 0 0,0 12,10A2,2 0 0,0 14,8A2,2 0 0,0 12,6M20,19C20,21.21 16.42,23 12,23C7.58,23 4,21.21 4,19C4,17.71 5.22,16.56 7.11,15.83L7.75,16.74C6.67,17.19 6,17.81 6,18.5C6,19.88 8.69,21 12,21C15.31,21 18,19.88 18,18.5C18,17.81 17.33,17.19 16.25,16.74L16.89,15.83C18.78,16.56 20,17.71 20,19Z"></path> </svg>
+                    </div>                       
+                    <div class="text-center">
+                        <p class="font-semibold text-[21px]">Uy tín tin cậy</p>
+                        <p class="text-[14px]">Uy tín kiểm chứng với 10 năm hoạt động, phục vụ 40.000+ khách hàng</p>
+                    </div>
+                </div>
+                <div class="w-full max-sm:mt-[40px]">
+                    <div class="w-[59px] h-[59px] mx-auto my-[20px] max-sm:my-[10px]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 1792 1896.0833" class="" fill="rgba(234, 3, 45, 1)"> <path d="M640 256h512V128H640v128zm1152 640v480q0 66-47 113t-113 47H160q-66 0-113-47T0 1376V896h672v160q0 26 19 45t45 19h320q26 0 45-19t19-45V896h672zm-768 0v128H768V896h256zm768-480v384H0V416q0-66 47-113t113-47h352V96q0-40 28-68t68-28h576q40 0 68 28t28 68v160h352q66 0 113 47t47 113z"></path> </svg>
+                    </div>                       
+                    <div class="text-center">
+                        <p class="font-semibold text-[21px]">Đơn giản tiện lợi</p>
+                        <p class="text-[14px]">Đơn giản, dễ dùng, dễ mua thông tin minh bạch</p>
+                    </div>
+                </div>
+                <div class="w-full max-sm:mt-[40px]">
+                    <div class="w-[59px] h-[59px] mx-auto my-[20px] max-sm:my-[10px]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 1792 1896.0833" class="" fill="rgba(234, 3, 45, 1)"> <path d="M888 1184l116-116-152-152-116 116v56h96v96h56zm440-720q-16-16-33 1L945 815q-17 17-1 33t33-1l350-350q17-17 1-33zm80 594v190q0 119-84.5 203.5T1120 1536H288q-119 0-203.5-84.5T0 1248V416q0-119 84.5-203.5T288 128h832q63 0 117 25 15 7 18 23 3 17-9 29l-49 49q-14 14-32 8-23-6-45-6H288q-66 0-113 47t-47 113v832q0 66 47 113t113 47h832q66 0 113-47t47-113v-126q0-13 9-22l64-64q15-15 35-7t20 29zm-96-738l288 288-672 672H640V992zm444 132l-92 92-288-288 92-92q28-28 68-28t68 28l152 152q28 28 28 68t-28 68z"></path> </svg>
+                    </div>                       
+                    <div class="text-center">
+                        <p class="font-semibold text-[21px]">Cam kết</p>
+                        <p class="text-[14px]">Tỉ lệ trùng lên đến 98% <br>- Kết quả được phân tích bởi chuyên gia</p>
+                    </div>
+                </div>
+            </div>
+        </div >
+        <div id="section2" class="mt-[80px] max-lg:mt-[20px]">
+            <div class="content-grid">
+                <div class="flex mb-[40px] max-sm:mb-[20px] max-lg:justify-center">
+                    <span class="h-[40px] w-[40px] sm:h-[54px] sm:w-[54px] mr-[10px]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 1920 1896.0833" class="" fill="#ea032d"> <path d="M593 896q-162 5-265 128H194q-82 0-138-40.5T0 865q0-353 124-353 6 0 43.5 21t97.5 42.5T384 597q67 0 133-23-5 37-5 66 0 139 81 256zm1071 637q0 120-73 189.5t-194 69.5H523q-121 0-194-69.5T256 1533q0-53 3.5-103.5t14-109T300 1212t43-97.5 62-81 85.5-53.5T602 960q10 0 43 21.5t73 48 107 48 135 21.5 135-21.5 107-48 73-48 43-21.5q61 0 111.5 20t85.5 53.5 62 81 43 97.5 26.5 108.5 14 109 3.5 103.5zM640 256q0 106-75 181t-181 75-181-75-75-181 75-181T384 0t181 75 75 181zm704 384q0 159-112.5 271.5T960 1024 688.5 911.5 576 640t112.5-271.5T960 256t271.5 112.5T1344 640zm576 225q0 78-56 118.5t-138 40.5h-134q-103-123-265-128 81-117 81-256 0-29-5-66 66 23 133 23 59 0 119-21.5t97.5-42.5 43.5-21q124 0 124 353zm-128-609q0 106-75 181t-181 75-181-75-75-181 75-181 181-75 181 75 75 181z"></path> </svg>
+                    </span>
+                    <h1 class="text-[24px] sm:text-[30px] font-bold">Về chúng tôi</h1>
+                </div>
+                <div class="grid grid-cols-2 gap-x-3 max-lg:grid-cols-1 max-lg:items-center">
+                    <div class="leading-[20px] max-lg:mt-[20px] max-lg:order-2">
+                        <p>Soi cầu Top 1 luôn đặt chữ tín lên hàng đầu, với phương châm phục vụ khách hàng tốt nhất, mang tới cho quý khách hàng những bộ số chuẩn nhất.<br>Chúng tôi được vận hành dựa trên đội ngũ chuyên gia có hiểu biết sâu sắc về các lĩnh vực toán học, xác xuất thống kê để tổng hợp và phân tích dữ liệu</p>
+                        <br>
+                        <p>Mọi giao dịch và thông tin của khách hàng khi đến với chúng tôi đều được bảo mật tuyệt đối</p>
+                        <br>
+                        <p>
+                            Chúng tôi cung cấp các sản phẩm gốc<br>
+                            - Vay qua đăng ký xe máy, ô tô<br>
+                            - Cầm ô tô hoặc xe máy<br>
+                            - Cầm cố nhà đất số đang ở ngoài hoặc trong ngân hàng
+                        </p>
+                    </div>
+                    <div class="max-w-full min-h-[289px] max-lg:order-1  max-sm:mb-[30px]">
+                        <div class="about grid grid-cols-2 gap-y-2 max-sm:grid-cols-1 max-sm:items-center">
+                            <div class="bg-[url('https://w.ladicdn.com/s550x450/5f588ffa5cd05b7d88eec9a7/xe-honda-crv-20230203123746-mkwu_.png')]"></div>
+                            <div class="bg-[url('https://w.ladicdn.com/s450x450/5f588ffa5cd05b7d88eec9a7/passing50_2021-20230203123845-9x1q-.png')]"></div>
+                        </div>
+                        <div class="about grid grid-cols-2 gap-y-2 max-sm:grid-cols-1 max-sm:items-center">
+                            <div class="bg-[url('https://w.ladicdn.com/s550x450/5f588ffa5cd05b7d88eec9a7/cam-cavet-xe-7-20230204053737-scmdg.png')]"></div>
+                            <div class="bg-[url('https://w.ladicdn.com/s550x450/5f588ffa5cd05b7d88eec9a7/image001-20230203124214-jacw3.png')]"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-[30px]">
+                    <a href="" class="btn-buy max-w-full w-[300px] text-white h-[40px] mx-auto bg-[#fc7b27] flex justify-center items-center rounded-[20px] font-semibold text-[16px] hover:bg-[#ff893a]">Mua cầu ngay</a>
+                </div>
+            </div>
+        </div>
+        <div id="section3" class="pt-[30px]">
+            <div class="items-grid">
+                <div class="text-[#fa0004] font-bold text-center text-[24px] sm:text-[40px]">
+                    <h1>Gói Cầu VIP</h1>
+                </div>
+                <div class="mt-[30px] grid gap-y-7 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 justify-center max-sm:h-[700px] max-sm:overflow-scroll">
+                    <div class="section3_list">
+                        <span class="w-[60px] h-[60px] my-[40px]">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 1792 1896.0833" class="" fill="rgba(234, 3, 45, 1)"> <path d="M640 256h512V128H640v128zm1152 640v480q0 66-47 113t-113 47H160q-66 0-113-47T0 1376V896h672v160q0 26 19 45t45 19h320q26 0 45-19t19-45V896h672zm-768 0v128H768V896h256zm768-480v384H0V416q0-66 47-113t113-47h352V96q0-40 28-68t68-28h576q40 0 68 28t28 68v160h352q66 0 113 47t47 113z"></path> </svg>
+                        </span>
+                        <div>
+                            <h2 class="text-[16px] font-semibold text-center leading-[16px]">Bạch Thủ Lô Miền Bắc</h2>
+                            <p class="text-[#3e9637] text-[12px] text-center"><i>30 người mua hôm nay</i></p>
+                            <p class="text-[#fe0014] text-[18px] text-center font-bold mt-[10px]">300.000 đ</p>
+                        </div>
+                        <a href="" class="w-[90%] text-white p-[3px] text-[14px] mx-auto bg-[#fa4a54] shadow-[2px_3px_4px_1px_rgba(0,0,0,0.5)] mt-[35px] text-center rounded-[4px]">
+                            Lấy số ngay 
+                        </a>
+                    </div>
+                    <div class="section3_list">
+                        <span class="w-[60px] h-[60px] my-[40px]">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 1792 1896.0833" class="" fill="rgba(234, 3, 45, 1)"> <path d="M640 256h512V128H640v128zm1152 640v480q0 66-47 113t-113 47H160q-66 0-113-47T0 1376V896h672v160q0 26 19 45t45 19h320q26 0 45-19t19-45V896h672zm-768 0v128H768V896h256zm768-480v384H0V416q0-66 47-113t113-47h352V96q0-40 28-68t68-28h576q40 0 68 28t28 68v160h352q66 0 113 47t47 113z"></path> </svg>
+                        </span>
+                        <div>
+                            <h2 class="text-[16px] font-semibold text-center leading-[16px]">Bạch Thủ Lô Miền Bắc</h2>
+                            <p class="text-[#3e9637] text-[12px] text-center"><i>30 người mua hôm nay</i></p>
+                            <p class="text-[#fe0014] text-[18px] text-center font-bold mt-[10px]">300.000 đ</p>
+                        </div>
+                        <a href="" class="w-[90%] text-white p-[3px] text-[14px] mx-auto bg-[#fa4a54] shadow-[2px_3px_4px_1px_rgba(0,0,0,0.5)] mt-[35px] text-center rounded-[4px]">
+                            Lấy số ngay 
+                        </a>
+                    </div>
+                    <div class="section3_list">
+                        <span class="w-[60px] h-[60px] my-[40px]">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 1792 1896.0833" class="" fill="rgba(234, 3, 45, 1)"> <path d="M640 256h512V128H640v128zm1152 640v480q0 66-47 113t-113 47H160q-66 0-113-47T0 1376V896h672v160q0 26 19 45t45 19h320q26 0 45-19t19-45V896h672zm-768 0v128H768V896h256zm768-480v384H0V416q0-66 47-113t113-47h352V96q0-40 28-68t68-28h576q40 0 68 28t28 68v160h352q66 0 113 47t47 113z"></path> </svg>
+                        </span>
+                        <div>
+                            <h2 class="text-[16px] font-semibold text-center leading-[16px]">Bạch Thủ Lô Miền Bắc</h2>
+                            <p class="text-[#3e9637] text-[12px] text-center"><i>30 người mua hôm nay</i></p>
+                            <p class="text-[#fe0014] text-[18px] text-center font-bold mt-[10px]">300.000 đ</p>
+                        </div>
+                        <a href="" class="w-[90%] text-white p-[3px] text-[14px] mx-auto bg-[#fa4a54] shadow-[2px_3px_4px_1px_rgba(0,0,0,0.5)] mt-[35px] text-center rounded-[4px]">
+                            Lấy số ngay 
+                        </a>
+                    </div>
+                    <div class="section3_list">
+                        <span class="w-[60px] h-[60px] my-[40px]">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 1792 1896.0833" class="" fill="rgba(234, 3, 45, 1)"> <path d="M640 256h512V128H640v128zm1152 640v480q0 66-47 113t-113 47H160q-66 0-113-47T0 1376V896h672v160q0 26 19 45t45 19h320q26 0 45-19t19-45V896h672zm-768 0v128H768V896h256zm768-480v384H0V416q0-66 47-113t113-47h352V96q0-40 28-68t68-28h576q40 0 68 28t28 68v160h352q66 0 113 47t47 113z"></path> </svg>
+                        </span>
+                        <div>
+                            <h2 class="text-[16px] font-semibold text-center leading-[16px]">Bạch Thủ Lô Miền Bắc</h2>
+                            <p class="text-[#3e9637] text-[12px] text-center"><i>30 người mua hôm nay</i></p>
+                            <p class="text-[#fe0014] text-[18px] text-center font-bold mt-[10px]">300.000 đ</p>
+                        </div>
+                        <a href="" class="w-[90%] text-white p-[3px] text-[14px] mx-auto bg-[#fa4a54] shadow-[2px_3px_4px_1px_rgba(0,0,0,0.5)] mt-[35px] text-center rounded-[4px]">
+                            Lấy số ngay 
+                        </a>
+                    </div>
+                    <div class="section3_list">
+                        <span class="w-[60px] h-[60px] my-[40px]">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 1792 1896.0833" class="" fill="rgba(234, 3, 45, 1)"> <path d="M640 256h512V128H640v128zm1152 640v480q0 66-47 113t-113 47H160q-66 0-113-47T0 1376V896h672v160q0 26 19 45t45 19h320q26 0 45-19t19-45V896h672zm-768 0v128H768V896h256zm768-480v384H0V416q0-66 47-113t113-47h352V96q0-40 28-68t68-28h576q40 0 68 28t28 68v160h352q66 0 113 47t47 113z"></path> </svg>
+                        </span>
+                        <div>
+                            <h2 class="text-[16px] font-semibold text-center leading-[16px]">Bạch Thủ Lô Miền Bắc</h2>
+                            <p class="text-[#3e9637] text-[12px] text-center"><i>30 người mua hôm nay</i></p>
+                            <p class="text-[#fe0014] text-[18px] text-center font-bold mt-[10px]">300.000 đ</p>
+                        </div>
+                        <a href="" class="w-[90%] text-white p-[3px] text-[14px] mx-auto bg-[#fa4a54] shadow-[2px_3px_4px_1px_rgba(0,0,0,0.5)] mt-[35px] text-center rounded-[4px]">
+                            Lấy số ngay 
+                        </a>
+                    </div>
+                    <div class="section3_list">
+                        <span class="w-[60px] h-[60px] my-[40px]">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 1792 1896.0833" class="" fill="rgba(234, 3, 45, 1)"> <path d="M640 256h512V128H640v128zm1152 640v480q0 66-47 113t-113 47H160q-66 0-113-47T0 1376V896h672v160q0 26 19 45t45 19h320q26 0 45-19t19-45V896h672zm-768 0v128H768V896h256zm768-480v384H0V416q0-66 47-113t113-47h352V96q0-40 28-68t68-28h576q40 0 68 28t28 68v160h352q66 0 113 47t47 113z"></path> </svg>
+                        </span>
+                        <div>
+                            <h2 class="text-[16px] font-semibold text-center leading-[16px]">Bạch Thủ Lô Miền Bắc</h2>
+                            <p class="text-[#3e9637] text-[12px] text-center"><i>30 người mua hôm nay</i></p>
+                            <p class="text-[#fe0014] text-[18px] text-center font-bold mt-[10px]">300.000 đ</p>
+                        </div>
+                        <a href="" class="w-[90%] text-white p-[3px] text-[14px] mx-auto bg-[#fa4a54] shadow-[2px_3px_4px_1px_rgba(0,0,0,0.5)] mt-[35px] text-center rounded-[4px]">
+                            Lấy số ngay 
+                        </a>
+                    </div>
+                    <div class="section3_list">
+                        <span class="w-[60px] h-[60px] my-[40px]">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 1792 1896.0833" class="" fill="rgba(234, 3, 45, 1)"> <path d="M640 256h512V128H640v128zm1152 640v480q0 66-47 113t-113 47H160q-66 0-113-47T0 1376V896h672v160q0 26 19 45t45 19h320q26 0 45-19t19-45V896h672zm-768 0v128H768V896h256zm768-480v384H0V416q0-66 47-113t113-47h352V96q0-40 28-68t68-28h576q40 0 68 28t28 68v160h352q66 0 113 47t47 113z"></path> </svg>
+                        </span>
+                        <div>
+                            <h2 class="text-[16px] font-semibold text-center leading-[16px]">Bạch Thủ Lô Miền Bắc</h2>
+                            <p class="text-[#3e9637] text-[12px] text-center"><i>30 người mua hôm nay</i></p>
+                            <p class="text-[#fe0014] text-[18px] text-center font-bold mt-[10px]">300.000 đ</p>
+                        </div>
+                        <a href="" class="w-[90%] text-white p-[3px] text-[14px] mx-auto bg-[#fa4a54] shadow-[2px_3px_4px_1px_rgba(0,0,0,0.5)] mt-[35px] text-center rounded-[4px]">
+                            Lấy số ngay 
+                        </a>
+                    </div>
+                    <div class="section3_list">
+                        <span class="w-[60px] h-[60px] my-[40px]">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 1792 1896.0833" class="" fill="rgba(234, 3, 45, 1)"> <path d="M640 256h512V128H640v128zm1152 640v480q0 66-47 113t-113 47H160q-66 0-113-47T0 1376V896h672v160q0 26 19 45t45 19h320q26 0 45-19t19-45V896h672zm-768 0v128H768V896h256zm768-480v384H0V416q0-66 47-113t113-47h352V96q0-40 28-68t68-28h576q40 0 68 28t28 68v160h352q66 0 113 47t47 113z"></path> </svg>
+                        </span>
+                        <div>
+                            <h2 class="text-[16px] font-semibold text-center leading-[16px]">Bạch Thủ Lô Miền Bắc</h2>
+                            <p class="text-[#3e9637] text-[12px] text-center"><i>30 người mua hôm nay</i></p>
+                            <p class="text-[#fe0014] text-[18px] text-center font-bold mt-[10px]">300.000 đ</p>
+                        </div>
+                        <a href="" class="w-[90%] text-white p-[3px] text-[14px] mx-auto bg-[#fa4a54] shadow-[2px_3px_4px_1px_rgba(0,0,0,0.5)] mt-[35px] text-center rounded-[4px]">
+                            Lấy số ngay 
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="section4" class="mt-[50px] pt-[100px] max-lg:pt-[20px] pb-[30px] w-full bg-[#fcdd67]">
+            <div class="content-grid">
+                <div class="flex items-center mb-[40px] max-lg:flex-col">
+                    <div class="w-[54px] h-[54px] ml-[22px] mr-[6px]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 1397.9638 1896.0833" class="" fill="rgba(234,3,45,1)"> <path d="M1152 256H128v1242l423-406 89-85 89 85 423 406V256zm12-128q23 0 44 9 33 13 52.5 41t19.5 62v1289q0 34-19.5 62t-52.5 41q-19 8-44 8-48 0-83-32l-441-424-441 424q-36 33-83 33-23 0-44-9-33-13-52.5-41T0 1529V240q0-34 19.5-62T72 137q21-9 44-9h1048z"></path> </svg>
+                    </div>
+                    <h1 class="font-bold text-[18px] sm:text-[30px]">UY TÍN - TRÁCH NGHIỆM - BẢO MẬT</h1>
+                </div>
+                <div class="lg:pl-[50px] max-lg:items-center max-lg:flex-col border-t-[1px] border-[#ea032d] pt-[38px] pb-[20px] flex max-w-full">
+                    <span class="max-lg:order-2 max-lg:mt-[8px] lg:border-r-[1px] lg:w-[130px] lg:pr-[60px] leading-[30px] font-bold text-[30px] h-[60px] border-[#ea032d] text-[#ea032d]">
+                        10 Năm
+                    </span>
+                    <div class="lg:px-[90px] max-lg:order-2 max-lg:text-center max-w-full">
+                        <h1 class="text-[24px] sm:text-[30px] font-bold">UY TÍN</h1>
+                        <p class="text-[14px] w-[380px] max-w-full leading-[18px]">Với kinh nghiệm hơn 10 năm trong việc phân tích tính toán số liệu phục vụ dự đoán soi cầu. Chúng tôi đạt hiệu quả rõ rệt và độ chính xác cao lên đến 98% trong việc dự đoán kết quả. Trong 10 năm qua chúng tôi đã phục vụ hàng chục nghìn khách hàng, giúp họ có một cuộc sống đầy đủ hơn.</p>
+                    </div>
+                    <div class="max-lg:order-1 w-full sm:min-w-[180px] bg-center rounded-[15px] h-[160px] bg-contain bg-no-repeat bg-[url('https://w.ladicdn.com/s500x500/5f588ffa5cd05b7d88eec9a7/tai-xuong-20230203141217-z0mms.jpg')]">
+                    </div>
+                </div>
+                <div class="lg:pl-[50px] max-lg:items-center max-lg:flex-col border-t-[1px] border-[#ea032d] pt-[38px] pb-[20px] flex max-w-full">
+                    <span class="max-lg:order-2 max-lg:mt-[8px] lg:border-r-[1px] lg:w-[130px] lg:pr-[60px] leading-[30px] font-bold text-[30px] h-[60px] border-[#ea032d] text-[#ea032d]">
+                        Đảm Bảo
+                    </span>
+                    <div class="lg:px-[90px] max-lg:order-2 max-lg:text-center max-w-full">
+                        <h1 class="text-[24px] sm:text-[30px] font-bold">TRÁCH NGHIỆM</h1>
+                        <p class="text-[14px] w-[380px] max-w-full leading-[18px]">Chúng tôi luôn đặt trách nghiệm cao nhất với những bộ số chúng tôi cấp. Theo liên tục 7 ngày bạn sẽ thắng lớn. Nhiều người đã chiến thắng, việc còn lại của bạn là tin tưởng chúng tôi.</p>
+                    </div>
+                    <div class="max-lg:order-1 w-full sm:min-w-[180px] bg-center rounded-[15px] h-[160px] bg-contain bg-no-repeat bg-[url('https://w.ladicdn.com/s550x500/5f588ffa5cd05b7d88eec9a7/bat-tay-dung-cach-20230203141657-kwkez.jpg')]">
+                    </div>
+                </div>
+                <div class="lg:pl-[50px] max-lg:items-center max-lg:flex-col border-t-[1px] border-[#ea032d] pt-[38px] pb-[20px] flex max-w-full">
+                    <span class="max-lg:order-2 max-lg:mt-[8px] lg:border-r-[1px] lg:w-[130px] lg:pr-[60px] leading-[30px] font-bold text-[30px] h-[60px] border-[#ea032d] text-[#ea032d]">
+                        An Toàn
+                    </span>
+                    <div class="lg:px-[90px] max-lg:order-2 max-lg:text-center max-w-full">
+                        <h1 class="text-[24px] sm:text-[30px] font-bold">BẢO MẬT THÔNG TIN</h1>
+                        <p class="text-[14px] w-[380px] max-w-full leading-[18px]">Tất cả các hoạt động giao dịch trên hệ thống đều được bảo mật, không một thông tin nào của quý khách được ghi lại. Thanh toán an toàn qua thẻ cào. Tất cả điều này đảm bảo bạn hoàn toàn ẩn danh với chúng tôi và những người khác. <br>Cam kết bảo mật tuyệt đối</p>
+                    </div>
+                    <div class="max-lg:order-1  w-full sm:min-w-[180px] bg-center rounded-[15px] h-[160px] bg-contain bg-no-repeat bg-[url('https://w.ladicdn.com/s550x500/5f588ffa5cd05b7d88eec9a7/cong-ty-an-ninh-mang-20230203142011-ol1co.jpg')]">
+                    </div>
+                </div>
+                <div class="mt-[40px] ">
+                    <a href="" class="max-w-full w-[300px] text-white h-[40px] mx-auto bg-[#fc7b27] flex justify-center items-center rounded-[20px] font-semibold text-[16px] hover:bg-[#ff893a]">Mua cầu ngay</a>
+                </div>
+            </div>
+        </div>
+        <div id="section5" class="mt-[50px]">
+            <div class="items-grid">
+                <div>
+                    <h1 class="text-[24px] sm:text-[32px] text-center text-[#ea032d] font-bold">Soicautop1 hoạt động như thế nào?</h1>
+                    <p class="text-[14px] sm:text-[24px] text-center text-black">Chỉ với 3 bước đơn giản là bạn đã có cuộc sống sung sướng hơn</p>
+                </div>
+                <div class="grid grid-cols-3 mt-[20px] md:mt-[40px] max-md:grid-cols-1 max-md:items-center">
+                    <div class="flex flex-col items-center min-h-[330px] max-w-full">
+                        <img class="max-w-full w-[230px] my-[10px] sm:my-[20px]" src="https://assets.website-files.com/60083f8eb1bdff3d102d3dee/600c869588abe058511d9875_pic1.svg" alt="">
+                        <div class="px-[6px]">
+                            <h2 class="text-center font-bold text-[18px] sm:text-[24px]">Thống kê dữ liệu và phân tích liên tục</h2>
+                            <p class="text-center text-[14px] sm:text-[17px] text-[#565656] mt-[8px]">Toàn bộ số liệu xổ số 3 miền đều được thống kê và phân tích liên tục từng giây trong hệ thống của chúng tôi</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center min-h-[330px] max-w-full">
+                        <img class="max-w-full w-[230px] my-[10px] sm:my-[20px]" src="https://assets.website-files.com/60083f8eb1bdff3d102d3dee/600c8695f296c084f6c5e0d8_pic2.svg" alt="">
+                        <div class="px-[6px]">
+                            <h2 class="text-center font-bold text-[18px] sm:text-[24px]">Gửi những bộ số chuẩn cho khách hàng</h2>
+                            <p class="text-center text-[14px] sm:text-[17px] text-[#565656] mt-[8px]">Chỉ với từ 300.000 bạn sẽ có bộ số chuẩn xác mà các chuyên gia cũng như hệ thống máy tính phức tạp của chúng tôi nghiên cứu trong nhiều ngày liên tục</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center min-h-[330px] max-w-full">
+                        <img class="max-w-full w-[230px] my-[10px] sm:my-[20px]" src="https://assets.website-files.com/60083f8eb1bdff3d102d3dee/600c8695c7218784d4bd95f5_pic3.svg" alt="">
+                        <div class="px-[6px]">
+                            <h2 class="text-center font-bold text-[18px] sm:text-[24px]">Tận hưởng chiến thắng</h2>
+                            <p class="text-center text-[14px] sm:text-[17px] text-[#565656] mt-[8px]">Việc sau cùng là bạn tận hưởng chiến thắng của mình, chiến thắng mang lại nhiều tiền bạc</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-[20px] sm:mt-[50px]">
+                    <a href="" class="btn-buy max-w-full w-[300px] text-white h-[40px] mx-auto bg-[#fc7b27] flex justify-center items-center rounded-[20px] font-semibold text-[16px] hover:bg-[#ff893a]">Mua cầu ngay</a>
+                </div>
+            </div>
+        </div>
+        <div id="section6" class="mt-[50px]">
+            <div class="content-grid">
+                <h1 class="text-[24px] sm:text-[38px] font-bold text-center mb-[40px]">Khách hàng đánh giá Soicauso1 như thế nào?</h1>
+                <div class="swiper customer w-full min-h-[500px]">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="w-[210px] min-h-[334px] mx-[10px]">
+                                <div class="relative">
+                                    <img class="mx-auto my-[30px] w-[130px] h-[130px] rounded-full" src="https://assets.website-files.com/60083f8eb1bdff3d102d3dee/600cab44b7895387c9bb7456_uxer4.svg" alt="">
+                                    <img class="absolute top-0 left-0 w-[30px]" src="https://assets.website-files.com/60083f8eb1bdff3d102d3dee/600ca1114901e6cc6a853e5f_quote.svg" alt="">
+                                </div>
+                                <div class="px-[6px]">
+                                    <p class="text-[16px] text-[#565656] text-center">Vay tiền tại Dong247 cực kỳ tiện. Tôi chỉ mất 2 phút là có thể nhận được bảng so sánh khoản vay từ các công ty vay tiền uy tín tại Việt Nam.</p>
+                                    <p class="text-[16px] text-[#ea032d] text-center font-bold mt-[10px]">Nguyễn Bình An</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="w-[210px] min-h-[334px] mx-[10px]">
+                                <div class="relative">
+                                    <img class="mx-auto my-[30px] w-[130px] h-[130px] rounded-full" src="https://assets.website-files.com/60083f8eb1bdff3d102d3dee/600cab341dd34a4a8694a976_user2.svg" alt="">
+                                    <img class="absolute top-0 left-0 w-[30px]" src="https://assets.website-files.com/60083f8eb1bdff3d102d3dee/600ca1114901e6cc6a853e5f_quote.svg" alt="">
+                                </div>
+                                <div class="px-[6px]">
+                                    <p class="text-[16px] text-[#565656] text-center">Vay trực tuyến với Dong247 cực kỳ dễ dàng và tiện lợi, giải ngân nhanh hơn ngân hàng, chỉ cần điện thoại là vay online ngay.</p>
+                                    <p class="text-[16px] text-[#ea032d] text-center font-bold mt-[10px]">Hoàng Phương Linh</p>
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="w-[210px] min-h-[334px] mx-[10px]">
+                                <div class="relative">
+                                    <img class="mx-auto my-[30px] w-[130px] h-[130px] rounded-full" src="https://assets.website-files.com/60083f8eb1bdff3d102d3dee/600cab44b7895387c9bb7456_uxer4.svg" alt="">
+                                    <img class="absolute top-0 left-0 w-[30px]" src="https://assets.website-files.com/60083f8eb1bdff3d102d3dee/600ca1114901e6cc6a853e5f_quote.svg" alt="">
+                                </div>
+                                <div class="px-[6px]">
+                                    <p class="text-[16px] text-[#565656] text-center">Vay tiền tại Dong247 cực kỳ tiện. Tôi chỉ mất 2 phút là có thể nhận được bảng so sánh khoản vay từ các công ty vay tiền uy tín tại Việt Nam.</p>
+                                    <p class="text-[16px] text-[#ea032d] text-center font-bold mt-[10px]">Nguyễn Bình An</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="w-[210px] min-h-[334px] mx-[10px]">
+                                <div class="relative">
+                                    <img class="mx-auto my-[30px] w-[130px] h-[130px] rounded-full" src="https://assets.website-files.com/60083f8eb1bdff3d102d3dee/600cb1f55a4c45e1edb07050_user3.svg" alt="">
+                                    <img class="absolute top-0 left-0 w-[30px]" src="https://assets.website-files.com/60083f8eb1bdff3d102d3dee/600ca1114901e6cc6a853e5f_quote.svg" alt="">
+                                </div>
+                                <div class="px-[6px]">
+                                    <p class="text-[16px] text-[#565656] text-center">Nhờ có bảng so sánh các khoản vay Dong247 mà trong 2 phút tôi có thể biết được khoản vay nào là phù hợp nhất với bản thân</p>
+                                    <p class="text-[16px] text-[#ea032d] text-center font-bold mt-[10px]">Cung</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="w-[210px] min-h-[334px] mx-[10px]">
+                                <div class="relative">
+                                    <img class="mx-auto my-[30px] w-[130px] h-[130px] rounded-full" src="https://assets.website-files.com/60083f8eb1bdff3d102d3dee/600cb1fe3edde5a8cb902e0b_user5.svg" alt="">
+                                    <img class="absolute top-0 left-0 w-[30px]" src="https://assets.website-files.com/60083f8eb1bdff3d102d3dee/600ca1114901e6cc6a853e5f_quote.svg" alt="">
+                                </div>
+                                <div class="px-[6px]">
+                                    <p class="text-[16px] text-[#565656] text-center">Chỉ chia sẻ một vài thông tin về số tiền cần vay và thời gian vay, bảng so sánh các khoản vay Dong247 đưa cho tôi rất nhiều đề nghị vay ưu đãi từ nhiều tổ chức tín dụng khác nhau.</p>
+                                    <p class="text-[16px] text-[#ea032d] text-center font-bold mt-[10px]">Doãn</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="w-[210px] min-h-[334px] mx-[10px]">
+                                <div class="relative">
+                                    <img class="mx-auto my-[30px] w-[130px] h-[130px] rounded-full" src="https://assets.website-files.com/60083f8eb1bdff3d102d3dee/600cb2075f8396b5ef7ccb32_user6.svg" alt="">
+                                    <img class="absolute top-0 left-0 w-[30px]" src="https://assets.website-files.com/60083f8eb1bdff3d102d3dee/600ca1114901e6cc6a853e5f_quote.svg" alt="">
+                                </div>
+                                <div class="px-[6px]">
+                                    <p class="text-[16px] text-[#565656] text-center">Không cần liên hệ nhiều tổ chức tài chính, chỉ cần đăng ký vay một lần tại Dong247 là tôi biết được công ty tài chính nào phù hợp với minh. Thật tiện lợi phải không nào?</p>
+                                    <p class="text-[16px] text-[#ea032d] text-center font-bold mt-[10px]">Phong</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next max-lg:top-[430px] z-20"></div>
+                    <div class="swiper-button-prev max-lg:top-[430px] z-20"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div >
+                    <a href="" class="btn-buy max-w-full w-[300px] text-white h-[40px] mx-auto bg-[#fc7b27] flex justify-center items-center rounded-[20px] font-semibold text-[16px] hover:bg-[#ff893a]">Mua cầu ngay</a>
+                </div>             
+            </div>
+        </div>
+        <div id="section7" class="mt-[50px]">
+            <div class="items-grid">
+                <h1 class="text-[#ea032d] font-bold text-[24px] sm:text-[38px] text-center">Hình ảnh thực tế</h1>
+                <div class="grid-cols-3 grid w-full mt-[40px]">
+                    <span class="overflow-hidden">
+                        <img src="data:image/jpeg;base64,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" alt="">
+                    </span>
+                    <span class="overflow-hidden">
+                        <img src="https://simg.zalopay.com.vn/zlp-website/assets/thu_tuc_vay_tien_ngan_hang_Nhung_dieu_kien_vay_tien_ngan_hang_d546b79d2e.jpg" alt="">
+                    </span>
+                    <span class="overflow-hidden">
+                        <img src="https://giadinh.mediacdn.vn/296230595582509056/2022/3/10/vay-16469013789091830945756.jpg" alt="">
+                    </span>
+                    <span class="overflow-hidden">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2aflrR-GUmp0u5vVi85OXvBC9HqUlrkBVLw&usqp=CAU" alt="">
+                    </span>
+                    <span class="overflow-hidden">
+                        <img src="https://vaynhanhonline.com.vn/wp-content/uploads/2021/07/cac-app-vay-tien-khong-tham-dinh-3.jpg" alt="">
+                    </span>
+                    <span class="overflow-hidden">
+                        <img src="https://www.camau.gov.vn/wps/wcm/connect/a7cbe980-68fd-408d-a00e-b04cf2b1522a/drty.jpg?MOD=AJPERES&CVID=" alt="">
+                    </span>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer" class="w-full mt-[50px]">
+        <div class="bg-[url('data:image/jpeg;base64,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')] bg-no-repeat bg-cover">
+            <h2 class="w-full text-[14px] text-center text-[#fff] font-semibold">Soicautop1 - Chơi bền thắng chắc</h2>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>

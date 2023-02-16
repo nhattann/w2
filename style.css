@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html{
+    line-height: 19.2px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
+.content-grid{
+    width: 960px;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.items-grid{
+    width: 1024px;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* header */
+#header .content-grid ul li{
+    margin-left: 24px;
+    margin-right: 24px;
+    cursor: pointer;
+    
+}
+#header .content-grid ul li:hover{
+    border-bottom-width: 1px;
+    border-color: #ffde59;
+    color: #ffde59;
+}
+.header_dropdown{
+    display: none;
+    text-align: end;
+    
+}
+.header_dropdown div{
+    padding-right: 4px;
+    padding-left: 4px;
+}
+.header_dropdown div:hover{
+    background-color: #4f4f4f;
+}
+#header .content-grid ul li:hover .header_dropdown{
+    display: block;
+    color: white;
+}
+
+/* section 1 */
+
+.box{
+    opacity: 0;
+    right: 0;
+    top: -600px;
+    transition: 0.3s;
+}
+.active_box{
+    opacity: 1;
+    top: 0;
+}
+.active .line1{
+    transform: translate(0px , 15px)rotate(-45deg);
+}
+.active .line2{
+    opacity: 0;
+}
+.active .line3{
+    transform: translate(0px , -15px)rotate(45deg);
+}
+/* section 2 */
+.about div{
+    height: 135px;
+    border-radius: 15px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+@keyframes btn-buy{
+    0% {scale: 100%;}
+    50% {scale: 90%;}
+    75% {scale: 110%;}
+    100% {scale: 100%;}
+}
+.btn-buy:hover{
+    animation: btn-buy 0.5s ease-in;
+}
+.btn-buy:active{
+    scale: 98%;
+}
+/* section3 */
+.section3_list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 270px;
+    height: 300px;
+    box-shadow: 0 3px 5px 1px rgba(0,0,0,0.1);
+}
+.customer .swiper-button-next::after{
+    font-size: 38px;
+    color: black;
+}
+.customer .swiper-button-prev::after{
+    font-size: 38px;
+    color: black;
+}
+.customer .swiper-pagination{
+    top: 420px !important;
+}
+.customer .swiper-slide{
+    display: flex;
+    justify-content: center;
+}
+.customer .swiper-pagination .swiper-pagination-bullet-active{
+    background-color: black;
+}
+/* section 7 */
+#section7 .items-grid img{
+    margin: auto;
+    transition: 0.3s ease-out;
+    overflow: hidden;
+    border-radius: 5px;
+}
+#section7 .items-grid img:hover{
+    scale: 110%;
+}
